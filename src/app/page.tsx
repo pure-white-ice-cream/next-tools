@@ -9,6 +9,11 @@ const tools = [
 		description: "在 A、Z、AA… 与 1、26、27… 之间互相转换。",
 		href: "/tools/excel-column",
 	},
+	{
+		title: "OpenSearch Mapping 生成器",
+		description: "根据字段类型列表生成 OpenSearch index mappings/settings/aliases，并输出 col_* 字段清单。",
+		href: "/tools/opensearch-mapping",
+	},
 ] as const;
 
 export default function HomePage() {
