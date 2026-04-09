@@ -10,6 +10,11 @@ const tools = [
 		href: "/tools/excel-column",
 	},
 	{
+		title: "M-Team：上传种子 & 论坛作者帖查询",
+		description: "手动填写 headers/_timestamp/_sgin，通过服务端转发请求，输出上传种子列表与作者主题链接。",
+		href: "/tools/mteam-helper",
+	},
+	{
 		title: "OpenSearch Mapping 生成器",
 		description: "根据字段类型列表生成 OpenSearch index mappings/settings/aliases，并输出 col_* 字段清单。",
 		href: "/tools/opensearch-mapping",
