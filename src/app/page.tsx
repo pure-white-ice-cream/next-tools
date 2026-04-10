@@ -6,8 +6,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const tools = [
 	{
 		title: "Excel 列号 / 字母互转",
-		description: "在 A、Z、AA… 与 1、26、27… 之间互相转换。",
+		description: "左右模式，支持一键互换：在 A、Z、AA… 与 1、26、27… 之间互相转换。",
 		href: "/tools/excel-column",
+	},
+	{
+		title: "简繁体转换",
+		description: "模仿谷歌翻译的左右模式：简体 ↔ 繁體，一键互换。",
+		href: "/tools/zh-convert",
 	},
 	{
 		title: "M-Team：上传种子 & 论坛作者帖查询",

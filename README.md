@@ -20,8 +20,12 @@
 
 - **导航面板**：`/`
 - **小工具：Excel 列号/字母互转**：`/tools/excel-column`
+  - 左右模式，支持一键互换
+  - 支持多行：每行一个值
   - 数字 → 字母：1→A，26→Z，27→AA
   - 字母 → 数字：A→1，Z→26，AA→27（不区分大小写）
+- **小工具：简繁体转换**：`/tools/zh-convert`
+  - 左右模式，支持一键互换：简体 ↔ 繁體
 
 ## 项目结构（重点）
 
@@ -33,9 +37,12 @@ src/
     tools/
       excel-column/
         page.tsx              # Excel 列号/字母互转工具页
+      zh-convert/
+        page.tsx              # 简繁体转换工具页
   components/
     theme-provider.tsx        # next-themes Provider
     theme-toggle.tsx          # 暗色切换按钮
+    swap-two-pane.tsx         # 左右互换双栏组件
     ui/                       # shadcn/ui 风格组件目录
   lib/
     utils.ts                  # cn() 工具
