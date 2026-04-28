@@ -165,15 +165,19 @@ function buildOpensearchOutputs(params: { rawInputTypes: string; indexName: stri
 	const textMapping = {
 		type: "text",
 		fields: {
-			readingform: {
-				search_analyzer: "readingform_search_analyzer",
-				analyzer: "readingform_index_analyzer_os",
-				type: "text",
-			},
 			autocomplete: {
-				search_analyzer: "autocomplete_search_analyzer_os",
-				analyzer: "autocomplete_index_analyzer_os",
 				type: "text",
+				analyzer: "autocomplete_index_analyzer_os",
+				search_analyzer: "autocomplete_search_analyzer_os",
+			},
+			keyword: {
+				type: "keyword",
+				ignore_above: 256,
+			},
+			readingform: {
+				type: "text",
+				analyzer: "readingform_index_analyzer_os",
+				search_analyzer: "readingform_search_analyzer",
 			},
 		},
 	} as const;
